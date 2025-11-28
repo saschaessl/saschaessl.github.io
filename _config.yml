@@ -3,8 +3,7 @@ description: "Notes on translation, periodicals, and research"
 
 theme: minima
 
-author:
-  name: Sascha Essl
+author: "Sascha Essl"
 
 url: "https://saschaessl.github.io"
 baseurl: ""
