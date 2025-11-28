@@ -1,1 +1,2 @@
-
+layout: blog
+title: "Home"
