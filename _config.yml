@@ -14,8 +14,3 @@ baseurl: ""
 header_pages:
   - index.md
   - about.md
-
-# Minima theme options (siehe minima-Doku auf GitHub)
-minima:
-  social_links:
-    github: "saschaessl"
