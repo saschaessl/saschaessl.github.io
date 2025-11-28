@@ -4,7 +4,9 @@ theme: minima
 
 # Your GitHub username, used by minima for links
 author:
-  name: "Sascha Essl"
+  name: Sascha Essl
+
+  show_excerpts: true
 
 # URL settings (needed for korrekte Links)
 url: "https://saschaessl.github.io"
