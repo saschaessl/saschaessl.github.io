@@ -1,18 +1,14 @@
 title: "Sascha Essl"
 description: "Notes on translation, periodicals, and research"
+
 theme: minima
 
-# Your GitHub username, used by minima for links
 author:
   name: Sascha Essl
 
-  show_excerpts: true
-
-# URL settings (needed for korrekte Links)
 url: "https://saschaessl.github.io"
 baseurl: ""
 
-# Navigation (oben im Menü)
 header_pages:
   - index.md
   - about.md
