@@ -1,2 +1,1 @@
-layout: blog
-title: "Home"
+Welcome.
