@@ -1,6 +1,6 @@
 ---
 layout: page
-Title: about
+Title: "About"
 permalink: /about/
 ---
 Hello World
