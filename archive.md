@@ -1,6 +1,6 @@
 ---
 layout: page
-Title: "Archive"
+title: "Archive"
 permalink: /archive/
 ---
 Test Archive
