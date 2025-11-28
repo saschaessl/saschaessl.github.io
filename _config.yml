@@ -14,3 +14,4 @@ baseurl: ""
 header_pages:
   - index.md
   - about.md
+  - blog.md
