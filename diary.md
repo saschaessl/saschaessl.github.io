@@ -14,6 +14,6 @@ permalink: /diary/
 <div id="diary-content" style="display:none;">
   <!-- Einträge werden hier per JS eingeblendet -->
 </div>
-```
 
+A
 ---
