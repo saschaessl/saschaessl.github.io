@@ -19,8 +19,8 @@ jobs:
       - name: Encrypt diary pages
         run: |
           staticrypt _site/diary/index.html \
-            --password ${{ secrets.DIARY_PASSWORD }} \
-            --short -o _site/diary/index.html
+            -p ${{ secrets.DIARY_PASSWORD }} \
+            -o _site/diary/index.html
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
