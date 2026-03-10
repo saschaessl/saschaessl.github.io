@@ -18,6 +18,6 @@ header_pages:
 plugins:
   - jekyll-feed
 
-  collections:
+collections:
   diary:
     output: false        # ← keine eigenen URLs, Inhalt bleibt versteckt
