@@ -14,17 +14,6 @@ jobs:
           bundler-cache: true
       - name: Build Jekyll
         run: bundle exec jekyll build
-      - name: Install StatiCrypt
-        run: npm install -g staticrypt
-      - name: Encrypt diary pages
-        run: |
-          staticrypt _site/diary/index.html \
-            -p ${{ secrets.DIARY_PASSWORD }} \
-            --directory _site/diary
-          cp _site/diary/encrypted/index.html _site/diary/index.html
-      - name: Check encrypted output
-        run: |
-          head -20 _site/diary/index.html
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
