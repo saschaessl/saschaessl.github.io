@@ -24,10 +24,10 @@ jobs:
 
       - name: Encrypt diary pages
         run: |
-          find _site/diary -name "*.html" -exec \
-          staticrypt {} \
-            --password ${{ secrets.DIARY_PASSWORD }} \
-            --short -o {} \;
+          find _site -name "diary.html" -o -name "index.html" -path "*diary*" | \
+          xargs -I {} staticrypt {} \
+           --password ${{ secrets.DIARY_PASSWORD }} \
+            --short -o {} || true
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
