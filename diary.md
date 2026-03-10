@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Research Diary
+title: "Research Diary"
 permalink: /diary/
 ---
 
