@@ -1,30 +1,24 @@
 name: Build and Deploy
-
 on:
   push:
     branches: [main]
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.1'
           bundler-cache: true
-
       - name: Build Jekyll
         run: bundle exec jekyll build
-
       - name: Install StatiCrypt
         run: npm install -g staticrypt
-
-     - name: Encrypt diary pages
-  run: |
-    find _site -name "*.html" | head -20
+      - name: Encrypt diary pages
+        run: |
+          find _site -name "*.html" | head -20
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
