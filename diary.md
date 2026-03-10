@@ -3,6 +3,7 @@ layout: page
 title: "Research Diary"
 permalink: /diary/
 ---
+Hello
 
 <div id="lock-screen" style="text-align:center; padding: 3rem;">
   <p>🔒 Password protected</p>
