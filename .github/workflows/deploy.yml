@@ -21,6 +21,9 @@ jobs:
           staticrypt _site/diary/index.html \
             -p ${{ secrets.DIARY_PASSWORD }} \
             -o _site/diary/index.html
+      - name: Check encrypted output
+        run: |
+          head -50 _site/diary/index.html
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
