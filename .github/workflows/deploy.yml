@@ -22,13 +22,9 @@ jobs:
       - name: Install StatiCrypt
         run: npm install -g staticrypt
 
-      - name: Encrypt diary pages
-        run: |
-          find _site -name "diary.html" -o -name "index.html" -path "*diary*" | \
-          xargs -I {} staticrypt {} \
-           --password ${{ secrets.DIARY_PASSWORD }} \
-            --short -o {} || true
-
+     - name: Encrypt diary pages
+  run: |
+    find _site -name "*.html" | head -20
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
